@@ -1,0 +1,10 @@
+Command to list all the users of the Mac/laptop:
+
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ dscl . list /Users | grep -v '^_'
+Bhavesh
+bhaveshrajwani
+daemon
+Guest
+nobody
+root
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ 
