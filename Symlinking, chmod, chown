@@ -1,0 +1,406 @@
+Last login: Sat Jun 17 19:02:57 on ttys000
+Bhaveshs-Air:~ Bhavesh$ pypdfocr filename.pdf
+-bash: pypdfocr: command not found
+Bhaveshs-Air:~ Bhavesh$ brew install pypdfocr
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+error: could not lock config file .git/config: Permission denied
+
+Error: You must `brew link libpng` before imagemagick can be installed
+(virtualenv2.7) Bhaveshs-Air:downloads Bhavesh$ brew link libpng
+Linking /usr/local/Cellar/libpng/1.6.29... 
+Error: Could not symlink share/man/man3/libpng.3
+/usr/local/share/man/man3 is not writable.
+(virtualenv2.7) Bhaveshs-Air:downloads Bhavesh$ cd
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown user:admin -R /usr/local/share/man/man3
+Password:
+chown: user: illegal user name
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ dscl.list/Users
+-bash: dscl.list/Users: No such file or directory
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ dscl.list/Users | grep -v
+-bash: dscl.list/Users: No such file or directory
+usage: grep [-abcDEFGHhIiJLlmnOoqRSsUVvwxZ] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ dscl.list/Users | grep -v '^_'
+-bash: dscl.list/Users: No such file or directory
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ dscl . list /Users | grep -v '^_'
+Bhavesh
+bhaveshrajwani
+daemon
+Guest
+nobody
+root
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown user:Bhavesh -R /usr/local/share/man/man3
+Password:
+chown: Bhavesh: illegal group name
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown user: -R /usr/local/share/man/man3
+chown: user: illegal user name
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown user:-R /usr/local/share/man/man3
+chown: -R: illegal group name
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown Bhavesh: -R /usr/local/share/man/man3
+chown: -R: No such file or directory
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown -R Bhavesh: /usr/local/share/man/man3
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link libpng
+Linking /usr/local/Cellar/libpng/1.6.29... 18 symlinks created
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew install imagemagick
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+error: could not lock config file .git/config: Permission denied
+Cannot rebase: You have unstaged changes.
+Please commit or stash them.
+==> Installing dependencies for imagemagick: libtool, xz, jpeg, libtiff, freetype
+==> Installing imagemagick dependency: libtool
+==> Downloading https://homebrew.bintray.com/bottles/libtool-2.4.6_1.sierra.bott
+######################################################################## 100.0%
+==> Pouring libtool-2.4.6_1.sierra.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/aclocal/libtool.m4
+/usr/local/share/aclocal is not writable.
+
+You can try again using:
+  brew link libtool
+==> Caveats
+In order to prevent conflicts with Apple's own libtool we have prepended a "g"
+so, you have instead: glibtool and glibtoolize.
+==> Summary
+🍺  /usr/local/Cellar/libtool/2.4.6_1: 70 files, 3.7MB
+==> Installing imagemagick dependency: xz
+==> Downloading https://homebrew.bintray.com/bottles/xz-5.2.3.sierra.bottle.tar.
+######################################################################## 100.0%
+==> Pouring xz-5.2.3.sierra.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/doc/xz
+/usr/local/share/doc is not writable.
+
+You can try again using:
+  brew link xz
+==> Summary
+🍺  /usr/local/Cellar/xz/5.2.3: 92 files, 1.4MB
+==> Installing imagemagick dependency: jpeg
+==> Downloading https://homebrew.bintray.com/bottles/jpeg-8d.sierra.bottle.2.tar
+######################################################################## 100.0%
+==> Pouring jpeg-8d.sierra.bottle.2.tar.gz
+🍺  /usr/local/Cellar/jpeg/8d: 19 files, 708.3KB
+==> Installing imagemagick dependency: libtiff
+==> Downloading https://homebrew.bintray.com/bottles/libtiff-4.0.7_3.sierra.bott
+######################################################################## 100.0%
+==> Pouring libtiff-4.0.7_3.sierra.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/doc/tiff-4.0.7
+/usr/local/share/doc is not writable.
+
+You can try again using:
+  brew link libtiff
+==> Summary
+🍺  /usr/local/Cellar/libtiff/4.0.7_3: 248 files, 3.4MB
+==> Installing imagemagick dependency: freetype
+==> Downloading https://homebrew.bintray.com/bottles/freetype-2.7.1.sierra.bottl
+######################################################################## 100.0%
+==> Pouring freetype-2.7.1.sierra.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/aclocal/freetype2.m4
+/usr/local/share/aclocal is not writable.
+
+You can try again using:
+  brew link freetype
+==> Summary
+🍺  /usr/local/Cellar/freetype/2.7.1: 62 files, 2.5MB
+==> Installing imagemagick 
+==> Downloading https://homebrew.bintray.com/bottles/imagemagick-7.0.5-4.sierra.
+######################################################################## 100.0%
+==> Pouring imagemagick-7.0.5-4.sierra.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/doc/ImageMagick-7
+/usr/local/share/doc is not writable.
+
+You can try again using:
+  brew link imagemagick
+==> Summary
+🍺  /usr/local/Cellar/imagemagick/7.0.5-4: 1,522 files, 22.6MB
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link imagemagick
+Linking /usr/local/Cellar/imagemagick/7.0.5-4... 
+Error: Could not symlink share/doc/ImageMagick-7
+/usr/local/share/doc is not writable.
+
+
+
+++ where it starts turning around ++
+
+
+
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ sudo chown -R Bhavesh: /usr/local/share
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link imagemagick
+Linking /usr/local/Cellar/imagemagick/7.0.5-4... 71 symlinks created
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew install imagemagick
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+error: could not lock config file .git/config: Permission denied
+Cannot rebase: You have unstaged changes.
+Please commit or stash them.
+Warning: imagemagick-7.0.5-4 already installed
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link freetype
+Linking /usr/local/Cellar/freetype/2.7.1... 8 symlinks created
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link libtool
+Linking /usr/local/Cellar/libtool/2.4.6_1... 20 symlinks created
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link xz
+Linking /usr/local/Cellar/xz/5.2.3... 53 symlinks created
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link tiff
+Error: No such keg: /usr/local/Cellar/tiff
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link jpeg
+Warning: Already linked: /usr/local/Cellar/jpeg/8d
+To relink: brew unlink jpeg && brew link jpeg
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link jpeg
+Warning: Already linked: /usr/local/Cellar/jpeg/8d
+To relink: brew unlink jpeg && brew link jpeg
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ brew link libtiff
+Linking /usr/local/Cellar/libtiff/4.0.7_3... 96 symlinks created
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ ls
+Applications
+Building a word cloud.ipynb
+Desktop
+Documents
+Downloads
+Dropbox
+Learning Python the Hard way (Appendix).ipynb
+Learning Web scraping.ipynb
+Library
+Machine Learning Mastery Practice 1.ipynb
+Movies
+Music
+OFS summary.xls
+Pictures
+Public
+Scrape PDF?.ipynb
+Untitled.ipynb
+Untitled1.ipynb
+Untitled2.ipynb
+Web Scraping.ipynb
+anaconda
+downloading white papers from TrianPartners.ipynb
+geckodriver.log
+test2.xml
+trianpartners.com
+(virtualenv2.7) Bhaveshs-Air:~ Bhavesh$ cd Downloads
+(virtualenv2.7) Bhaveshs-Air:Downloads Bhavesh$ pypdfocr AmCham.pdf
+Starting conversion of AmCham.pdf
+/bin/sh: pdfimages: command not found
+WARNING: Could not execute pdfimages to calculate DPI (try installing xpdf or poppler?), so defaulting to 300dpi
+/bin/sh: gs: command not found
+
+ERROR: Ghostscript execution failed
+(virtualenv2.7) Bhaveshs-Air:Downloads Bhavesh$ brew install ghostscript
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+error: could not lock config file .git/config: Permission denied
+Cannot rebase: You have unstaged changes.
+Please commit or stash them.
+==> Installing dependencies for ghostscript: little-cms2
+==> Installing ghostscript dependency: little-cms2
+==> Downloading https://homebrew.bintray.com/bottles/little-cms2-2.8.sierra.bott
+######################################################################## 100.0%
+==> Pouring little-cms2-2.8.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/little-cms2/2.8: 17 files, 1MB
+==> Installing ghostscript 
+==> Downloading https://homebrew.bintray.com/bottles/ghostscript-9.21.sierra.bot
+######################################################################## 100.0%
+==> Pouring ghostscript-9.21.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/ghostscript/9.21: 717 files, 64.2MB
+(virtualenv2.7) Bhaveshs-Air:Downloads Bhavesh$ brew install poppler
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+error: could not lock config file .git/config: Permission denied
+Cannot rebase: You have unstaged changes.
+Please commit or stash them.
+==> Installing dependencies for poppler: fontconfig, pixman, libffi, pcre, glib, cairo, pkg-config, readline, sqlite, gdbm, openssl, python, gobject-introspection, openjpeg
+==> Installing poppler dependency: fontconfig
+==> Downloading https://homebrew.bintray.com/bottles/fontconfig-2.12.1_2.sierra.
+######################################################################## 100.0%
+==> Pouring fontconfig-2.12.1_2.sierra.bottle.tar.gz
+==> Using the sandbox
+==> Regenerating font cache, this may take a while
+==> /usr/local/Cellar/fontconfig/2.12.1_2/bin/fc-cache -frv
+brew install tesseract
+🍺  /usr/local/Cellar/fontconfig/2.12.1_2: 468 files, 3MB
+==> Installing poppler dependency: pixman
+==> Downloading https://homebrew.bintray.com/bottles/pixman-0.34.0.sierra.bottle
+######################################################################## 100.0%
+==> Pouring pixman-0.34.0.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/pixman/0.34.0: 12 files, 1.2MB
+==> Installing poppler dependency: libffi
+==> Downloading https://homebrew.bintray.com/bottles/libffi-3.2.1.sierra.bottle.
+######################################################################## 100.0%
+==> Pouring libffi-3.2.1.sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+Some formulae require a newer version of libffi.
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/libffi/lib
+
+==> Summary
+🍺  /usr/local/Cellar/libffi/3.2.1: 16 files, 297.0KB
+==> Installing poppler dependency: pcre
+==> Downloading https://homebrew.bintray.com/bottles/pcre-8.40.sierra.bottle.tar
+######################################################################## 100.0%
+==> Pouring pcre-8.40.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.40: 204 files, 5.4MB
+==> Installing poppler dependency: glib
+==> Downloading https://homebrew.bintray.com/bottles/glib-2.52.0.sierra.bottle.t
+######################################################################## 100.0%
+==> Pouring glib-2.52.0.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/glib/2.52.0: 430 files, 22.5MB
+==> Installing poppler dependency: cairo
+==> Downloading https://homebrew.bintray.com/bottles/cairo-1.14.8.sierra.bottle.
+######################################################################## 100.0%
+==> Pouring cairo-1.14.8.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/cairo/1.14.8: 119 files, 5.9MB
+==> Installing poppler dependency: pkg-config
+==> Downloading https://homebrew.bintray.com/bottles/pkg-config-0.29.2.sierra.bo
+######################################################################## 100.0%
+==> Pouring pkg-config-0.29.2.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/pkg-config/0.29.2: 11 files, 627KB
+==> Installing poppler dependency: readline
+==> Downloading https://homebrew.bintray.com/bottles/readline-7.0.3_1.sierra.bot
+######################################################################## 100.0%
+==> Pouring readline-7.0.3_1.sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+macOS provides the BSD libedit library, which shadows libreadline.
+In order to prevent conflicts when programs look for libreadline we are
+defaulting this GNU Readline installation to keg-only.
+
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/readline/lib
+    CPPFLAGS: -I/usr/local/opt/readline/include
+
+==> Summary
+🍺  /usr/local/Cellar/readline/7.0.3_1: 46 files, 1.5MB
+==> Installing poppler dependency: sqlite
+==> Downloading https://homebrew.bintray.com/bottles/sqlite-3.18.0.sierra.bottle
+######################################################################## 100.0%
+==> Pouring sqlite-3.18.0.sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+macOS provides an older sqlite3.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/sqlite/lib
+    CPPFLAGS: -I/usr/local/opt/sqlite/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/sqlite/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/sqlite/3.18.0: 11 files, 3.0MB
+==> Installing poppler dependency: gdbm
+==> Downloading https://homebrew.bintray.com/bottles/gdbm-1.13.sierra.bottle.tar
+######################################################################## 100.0%
+==> Pouring gdbm-1.13.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.13: 19 files, 554.4KB
+==> Installing poppler dependency: openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2k.sierra.bottl
+######################################################################## 100.0%
+==> Pouring openssl-1.0.2k.sierra.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/openssl/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2k: 1,696 files, 12MB
+==> Installing poppler dependency: python
+==> Downloading https://homebrew.bintray.com/bottles/python-2.7.13.sierra.bottle
+######################################################################## 100.0%
+==> Pouring python-2.7.13.sierra.bottle.1.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.6/bin/2to3
+==> /usr/local/Cellar/python/2.7.13/bin/python -s setup.py --no-user-cfg install
+==> /usr/local/Cellar/python/2.7.13/bin/python -s setup.py --no-user-cfg install
+==> /usr/local/Cellar/python/2.7.13/bin/python -s setup.py --no-user-cfg install
+==> Caveats
+Pip and setuptools have been installed. To update them
+  pip install --upgrade pip setuptools
+
+You can install Python packages with
+  pip install <package>
+
+They will install into the site-package directory
+  /usr/local/lib/python2.7/site-packages
+
+See: http://docs.brew.sh/Homebrew-and-Python.html
+==> Summary
+🍺  /usr/local/Cellar/python/2.7.13: 3,526 files, 48MB
+Error: You must `brew link python` before gobject-introspection can be installed
+(virtualenv2.7) Bhaveshs-Air:Downloads Bhavesh$ brew install tesseract
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+error: could not lock config file .git/config: Permission denied
+Cannot rebase: You have unstaged changes.
+Please commit or stash them.
+==> Installing dependencies for tesseract: leptonica
+==> Installing tesseract dependency: leptonica
+==> Downloading https://homebrew.bintray.com/bottles/leptonica-1.74.1.sierra.bot
+######################################################################## 100.0%
+==> Pouring leptonica-1.74.1.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/leptonica/1.74.1: 52 files, 5.6MB
+==> Installing tesseract 
+==> Downloading https://homebrew.bintray.com/bottles/tesseract-3.05.00.sierra.bo
+######################################################################## 100.0%
+==> Pouring tesseract-3.05.00.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/tesseract/3.05.00: 79 files, 38.9MB
+(virtualenv2.7) Bhaveshs-Air:Downloads Bhavesh$ pypdfocr AmCham.pdf
+Starting conversion of AmCham.pdf
+/bin/sh: pdfimages: command not found
+WARNING: Could not execute pdfimages to calculate DPI (try installing xpdf or poppler?), so defaulting to 300dpi
+PdfReadWarning: Xref table not zero-indexed. ID numbers for objects will be corrected. [pdf.py:1736]
+Completed conversion successfully to AmCham_ocr.pdf
+(virtualenv2.7) Bhaveshs-Air:Downloads Bhavesh$ 
